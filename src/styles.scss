@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    background: #4D4D4D;
+    margin: 1.5em;
+    font-family: 'Noto Sans', sans-serif;
+}
+a{
+    text-decoration: none;
+    
+}
+
+@media only screen and (min-width: 800px){
+    body{
+        margin: 1.5em 5em;
+    }
+} 
+@media only screen and (min-width: 1500px){
+    .wrapper{
+        width: 1400px;
+        margin: 0 auto;
+    }
+}

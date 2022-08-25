@@ -1,0 +1,73 @@
+.hero{
+    margin-top: 75px;
+}
+
+
+.hero img{
+    position: fixed;
+    bottom: 0;
+    background-size: cover;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    max-height: 1100px;
+    max-width: 1100px;
+    float: right;
+    
+}
+
+section.hero{
+    color: white;
+
+}
+
+h1{
+    font-size: 3rem;
+}
+
+iframe{
+    height: 300px;
+    width: 450px;
+}
+.chat{
+    display: none;
+}
+svg{
+padding-right: 5px;
+}
+
+@media only screen and (min-width: 775px){
+    .chat{
+/* display: inline;
+width: 250px;
+margin-left: 1em; */
+    }
+} 
+
+@media only screen and (min-width: 1060px){
+    .hero img{
+        /* left: unset;
+        right: 0;
+        overflow: hidden;
+        padding-right: 10%; */
+    }
+    .dotmagenta{
+        right:0;
+    }
+    .dotcyan{
+        left:0;
+    }
+    iframe{
+    height: 450px;
+    width: 600px;
+}
+}   
+@media only screen and (min-width: 1400px){
+    .hero img{
+        left: unset;
+        right: 0;
+        overflow: hidden;
+        padding-right: 10%;
+    }
+
+}   
