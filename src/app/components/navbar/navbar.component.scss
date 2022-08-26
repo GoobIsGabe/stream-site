@@ -3,6 +3,7 @@ header {
   // background-color: #222;
 }
 ul {
+
 margin: unset;
 padding: unset;
 right: 0;
@@ -32,6 +33,7 @@ right: 0;
   color: #00ffff;
   cursor: pointer;
   transition: 0.4s ease-in-out;
+  text-decoration: underline;
 }
 @media (max-width: 999px) {
   .menufiller{
@@ -46,6 +48,7 @@ right: 0;
     height: 100%;
     background: #222;
     transition: 0.4s ease-in-out;
+    z-index: 20;
   }
   .menu ul li {
     display: block;
@@ -60,7 +63,7 @@ right: 0;
     position: relative;
     right: 0;
     top: 20 px;
-    z-index: 10;
+    z-index: 100;
   }
 
   .menu_icon span {
