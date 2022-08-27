@@ -1,0 +1,14 @@
+.container h1{
+    font-size: 3rem;
+    color: white;
+}
+.merchimg{
+    width: 100%;
+}
+
+@media only screen and (max-width: 800px){
+    .container h1{
+        font-size: 1rem;
+        padding-top: 2em;
+    }
+}
