@@ -19,8 +19,14 @@
     filter: blur(250px);
     margin-left: -10em;
     margin-top: 40em;
+    min-height: 100vh;
   }
-
+  main{
+    min-height: 100vh;
+  }
+  app-footer{
+    height: 200px;
+  }
 @media only screen and (min-width: 1060px){
     .dotmagenta{
         right:0;
