@@ -10,6 +10,7 @@ export class NavbarComponent implements OnInit {
   constructor() { }
   menu_icon_variable: boolean = false;
   menuVariable: boolean = false;
+  
   ngOnInit(): void {
   }
   openMenu() {

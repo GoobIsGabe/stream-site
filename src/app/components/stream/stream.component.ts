@@ -10,6 +10,7 @@ export class StreamComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    
   }
 
 }
