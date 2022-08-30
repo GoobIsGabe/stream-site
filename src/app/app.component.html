@@ -1,7 +1,7 @@
-
-<app-navbar></app-navbar>
-<main>  
-  <svg 
+<!-- Hides if is on specific page -->
+<app-navbar *ngIf="router.url != '/socials'"></app-navbar>
+<main >  
+  <svg *ngIf="router.url != '/socials'"
   viewBox="0 0 200 200"
   xmlns='http://www.w3.org/2000/svg'
   class="noise">
@@ -19,10 +19,10 @@
     height='100%' 
     filter='url(#noiseFilter)' />
 </svg>
-<span class="dotmagenta"></span>
-<span class="dotmagenta"></span>
-<span class="dotcyan"></span>
-<span class="dotcyan"></span>
+<span class="dotmagenta" *ngIf="router.url != '/socials'"></span>
+<span class="dotmagenta"*ngIf="router.url != '/socials'"></span>
+<span class="dotcyan"*ngIf="router.url != '/socials'"></span>
+<span class="dotcyan"*ngIf="router.url != '/socials'"></span>
 <router-outlet></router-outlet>
 </main>
-<app-footer></app-footer>
+<app-footer *ngIf="router.url != '/socials'"></app-footer>

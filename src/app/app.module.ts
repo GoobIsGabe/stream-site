@@ -13,6 +13,8 @@ import { DonateComponent } from './components/donate/donate.component';
 import { SocialsComponent } from './components/socials/socials.component';
 import { OthersComponent } from './components/others/others.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { WidgetsComponent } from './components/widgets/widgets.component';
+
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { FooterComponent } from './components/footer/footer.component';
     DonateComponent,
     SocialsComponent,
     OthersComponent,
-    FooterComponent
+    FooterComponent,
+    WidgetsComponent,
+    
   ],
   imports: [
     BrowserModule,

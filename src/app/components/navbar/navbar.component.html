@@ -5,7 +5,7 @@
 <!-- <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button> -->
 <!-- </div>
       <div class="nav right menu-items">
-        <a routerLink="/stream" class="nav-link active"><span class="nav-link-span">stream</span></a>
+        <a routerLink="/stream" class=""><span class="nav-link-span">stream</span></a>
         <a routerLink="/commands" class="nav-link"><span class="nav-link-span">commands</span></a>
         <a routerLink="/leaderboard" class="nav-link"><span class="nav-link-span">leaderboards</span></a>
         <a routerLink="/merch" class="nav-link"><span class="nav-link-span">merch</span></a>
@@ -41,21 +41,17 @@
       <div id="sidenav" class="menu" [class.menuClass]="menuVariable">
         <div class="menufiller"></div>
         <ul>
-          <li>
-          <a routerLink="/stream" class="nav-link active">stream</a></li>
-          <li>
-            <a routerLink="/commands" class="nav-link active">commands</a>
-          </li>
-          <li>
-            <a routerLink="/leaderboard" class="nav-link active"
-              >leaderboards</a
-            >
-          </li>
-          <li><a routerLink="/merch" class="nav-link active">merch</a></li>
-          <li><a routerLink="/donate" class="nav-link active">donate</a></li>
-          <li>
-            <a routerLink="/recommended" class="nav-link active">community</a>
-          </li>
+          <div class="dropdown">
+            <li><a routerLink="/stream">stream</a></li>
+            <div class="dropdown-content">
+              <li><a routerLink="/widgets" class="">widgets</a></li>
+            </div>
+          </div>
+          <li><a routerLink="/commands" class="">commands</a></li>
+          <li><a routerLink="/leaderboard" class="">leaderboards</a></li>
+          <li><a routerLink="/merch" class="">merch</a></li>
+          <li><a routerLink="/donate" class="">donate</a></li>
+          <li><a routerLink="/recommended" class="">community</a></li>
         </ul>
       </div>
     </div>
