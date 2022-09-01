@@ -10,6 +10,7 @@ import { SocialsComponent } from './components/socials/socials.component';
 import { StreamComponent } from './components/stream/stream.component';
 import { VodsComponent } from './components/vods/vods.component';
 import { WidgetsComponent } from './components/widgets/widgets.component';
+import { RouletteComponent } from './components/roulette/roulette.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -22,6 +23,7 @@ const routes: Routes = [
   { path: 'socials', component: SocialsComponent },
   { path: 'recommended', component: OthersComponent },
   { path: 'widgets', component: WidgetsComponent },
+  { path: 'widgets/roulette', component: RouletteComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],

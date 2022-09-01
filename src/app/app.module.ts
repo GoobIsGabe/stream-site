@@ -14,6 +14,7 @@ import { SocialsComponent } from './components/socials/socials.component';
 import { OthersComponent } from './components/others/others.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { WidgetsComponent } from './components/widgets/widgets.component';
+import { RouletteComponent } from './components/roulette/roulette.component';
 
 
 @NgModule({
@@ -31,6 +32,7 @@ import { WidgetsComponent } from './components/widgets/widgets.component';
     OthersComponent,
     FooterComponent,
     WidgetsComponent,
+    RouletteComponent,
     
   ],
   imports: [
