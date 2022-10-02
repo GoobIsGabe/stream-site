@@ -11,7 +11,7 @@ export class RouletteComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     //IMPORTANT VARIABLES
     //How many images do you have in the folder?
-    let num = 19;
+    let num = 18;
     //How many times do you want the cube to spin
     let maxspins = 9;
     //How fast do you want the cube to spin
@@ -173,7 +173,7 @@ export class RouletteComponent implements OnInit, OnDestroy {
 
           picthree= (document.getElementById('picthree') as HTMLImageElement).style.animation ="dropShadow 2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both, pulse 0.5s ease-in-out 3 both";
           
-        clearInterval();  
+        // clearInterval();  
         }}, 8 * i);
         
     }
