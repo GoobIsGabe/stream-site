@@ -1,0 +1,44 @@
+<p>roulette-results works!</p>
+<input type="search" placeholder="Search by user" [(ngModel)]="user" (keyup)="searchResults()"  />
+<input type="search" placeholder="Search by item" [(ngModel)]="item" (keyup)="searchResults()"  />
+<!-- <h3>Roulette Results</h3>
+<ul>
+  <li
+    *ngFor="let roulette of rouletteResults; let i = index "
+    [class.active]="i == currentIndex"
+    (click)="setActiveRoulette(roulette, i)"
+  >
+    <div class="name list-item">{{ roulette.Username }} </div>
+    <div class="result list-item">{{ roulette.Result }}</div>
+    <div class="occurred list-item">{{ roulette.Occurred | date: "medium"}}</div>
+  </li>
+</ul>
+ -->
+
+  <!--for demo wrap-->
+  <h1>Roulette Result History</h1>
+  <div class="tbl-header">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Result</th>
+          <th>Occurred</th>
+        </tr>
+      </thead>
+    </table>
+  </div>
+  <div class="tbl-content">
+    <table cellpadding="0" cellspacing="0" border="0">
+      <tbody>
+        <tr *ngFor="let roulette of rouletteResults; let i = index "
+        [class.active]="i == currentIndex"
+        (click)="setActiveRoulette(roulette, i)" >
+          <td>{{ roulette.Username }} </td>
+          <td>{{ roulette.Result }}</td>
+          <td>{{ roulette.Occurred | date: "medium"}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
