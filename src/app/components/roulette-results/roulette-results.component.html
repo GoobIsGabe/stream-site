@@ -21,9 +21,9 @@
     <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
-          <th>Name</th>
-          <th>Result</th>
-          <th>Occurred</th>
+          <th [appSort]="rouletteResults" data-order="desc" data-name="Username" scope="col">Name</th>
+          <th [appSort]="rouletteResults" data-order="desc" data-name="Result" scope="col">Result</th>
+          <th [appSort]="rouletteResults" data-order="desc" data-name="Occurred" scope="col">Occurred</th>
         </tr>
       </thead>
     </table>
