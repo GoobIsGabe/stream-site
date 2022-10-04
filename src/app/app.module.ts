@@ -19,6 +19,7 @@ import { RouletteComponent } from './components/roulette/roulette.component';
 import { RouletteResultsComponent } from './components/roulette-results/roulette-results.component';
 import { FormsModule } from '@angular/forms';
 import { SortDirective } from './directive/sort.directive';
+import { RecordsComponent } from './components/records/records.component';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { SortDirective } from './directive/sort.directive';
     WidgetsComponent,
     RouletteComponent,
     RouletteResultsComponent,
-    SortDirective,   
+    SortDirective,
+    RecordsComponent,   
   ],
   imports: [
     BrowserModule,

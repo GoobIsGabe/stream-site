@@ -1,25 +1,3 @@
-<!-- <header id="nav-wrapper">
-    <nav id="nav">
-      <div class="nav left">
-        <span class="gradient skew"><h1 class="logo un-skew"><a routerLink="/">GoobIsGabe</a></h1></span> -->
-<!-- <button id="menu" class="btn-nav"><span class="fas fa-bars"></span></button> -->
-<!-- </div>
-      <div class="nav right menu-items">
-        <a routerLink="/stream" class=""><span class="nav-link-span">stream</span></a>
-        <a routerLink="/commands" class="nav-link"><span class="nav-link-span">commands</span></a>
-        <a routerLink="/leaderboard" class="nav-link"><span class="nav-link-span">leaderboards</span></a>
-        <a routerLink="/merch" class="nav-link"><span class="nav-link-span">merch</span></a>
-        <a routerLink="/donate" class="nav-link"><span class="nav-link-span">donate</span></a>
-        <a routerLink="/recommended" class="nav-link"><span class="nav-link-span">community</span></a>
-      </div>
-    </nav>
-    <input class="checkbox" type="checkbox" name="" id="" />
-    <div class="hamburger-lines">
-          <span class="line line1"></span>
-          <span class="line line2"></span>
-          <span class="line line3"></span>
-    </div>  
-  </header> -->
 <header>
   <div class="container">
     <div class="row">
@@ -48,7 +26,13 @@
             </div>
           </div>
           <li><a routerLink="/commands" class="">commands</a></li>
-          <li><a routerLink="/leaderboard" class="">leaderboards</a></li>
+          <div class="dropdown">
+          <li><a routerLink="/records" class="">records</a></li>
+          <div class="dropdown-content">
+            <li><a routerLink="/leaderboard" class="">leaderboards</a></li>
+            <li><a routerLink="/roulette" class="">roulette</a></li>
+          </div>
+        </div>          
           <li><a routerLink="/merch" class="">merch</a></li>
           <li><a routerLink="/donate" class="">donate</a></li>
           <li><a routerLink="/recommended" class="">community</a></li>

@@ -4,7 +4,7 @@ import { RouletteService } from 'src/app/services/roulette.service';
 @Component({
   selector: 'app-roulette-results',
   templateUrl: './roulette-results.component.html',
-  styleUrls: ['./roulette-results.component.css']
+  styleUrls: ['./roulette-results.component.scss']
 })
 export class RouletteResultsComponent implements OnInit {
 

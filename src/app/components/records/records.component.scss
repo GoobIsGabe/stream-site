@@ -1,0 +1,29 @@
+h2 {
+  font-size: 2em;
+  color: white;
+}
+
+h3 a{
+  font-size: 1.5em;
+  color: white;
+  text-decoration: underline;
+}
+span{
+  font-size: 1.25em;
+  color: #8d8d8d;
+}
+@media only screen and (max-width: 800px){
+    .container h1{
+        font-size: 1rem;
+        padding-top: 2em;
+    }
+}
+@media only screen and (min-width: 775px){
+  h2{
+    font-size: 2.75rem;
+    color: white;
+}
+h3 a{
+  font-size: 2rem;
+}
+} 

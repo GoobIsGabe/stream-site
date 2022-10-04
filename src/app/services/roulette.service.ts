@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const baseUrl = 'http://localhost:8080/api/roulette';
+const baseUrl = 'https://us-central1-streamsite-542be.cloudfunctions.net/app/api/roulette';
 
 @Injectable({
   providedIn: 'root'

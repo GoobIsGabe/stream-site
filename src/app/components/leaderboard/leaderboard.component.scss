@@ -1,3 +1,8 @@
-div{
-    min-height: calc(100vh-200px);
+.container{
+    margin-top: 3em;
+    color: white;
+    a{
+        color: white;
+        text-decoration: underline;
+    }
 }

@@ -16,7 +16,7 @@ export class OthersComponent implements OnInit {
       /*Twitter*/ 'alexandritestud',
       /*Youtube*/ null,
       /*Instagram*/ 'alexandrite.studio',
-      /*Description*/ 'Description goes here for describing what or who this card is about.'
+      /*Description*/ 'An awesome artist, and good friend. Also behind the Goobcube.'
     ),
     new Community(
       /*User*/ 'BKXO',
@@ -25,7 +25,7 @@ export class OthersComponent implements OnInit {
       /*Twitter*/ null,
       /*Youtube*/ null,
       /*Instagram*/ null,
-      /*Description*/ 'Description goes here for describing what or who this card is about.'
+      /*Description*/ 'That turtle with the 1.21 gigabean RAM. Certified homie in Fall Guys, Marbles & karts.'
     ),
     new Community(
       /*User*/ 'D0yle',
@@ -34,7 +34,7 @@ export class OthersComponent implements OnInit {
       /*Twitter*/ 'thed0yle',
       /*Youtube*/ 'D0yle',
       /*Instagram*/ 'oliverhdoyle',
-      /*Description*/ 'Description goes here for describing what or who this card is about.'
+      /*Description*/ 'Pro gamer, karter & photographer, a streamer with welcoming content.'
     ),
     new Community(
       /*User*/ 'Mattyrey',
@@ -43,7 +43,7 @@ export class OthersComponent implements OnInit {
       /*Twitter*/ 'mattyreyrey',
       /*Youtube*/ 'mattyreyrey',
       /*Instagram*/ null,
-      /*Description*/ 'Description goes here for describing what or who this card is about.'
+      /*Description*/ 'High end gamer / homie with the intense gameplay & cringey content.'
     ),
     new Community(
       /*User*/ 'MissteryHero',
@@ -52,7 +52,7 @@ export class OthersComponent implements OnInit {
       /*Twitter*/ 'MissteryHero',
       /*Youtube*/ null,
       /*Instagram*/ null,
-      /*Description*/ 'Description goes here for describing what or who this card is about.'
+      /*Description*/ 'Lovely individual who is very supportive & great to be with.'
     ),
     new Community(
       /*User*/ 'Sünta',
@@ -61,7 +61,7 @@ export class OthersComponent implements OnInit {
       /*Twitter*/ 'sunta_foot',
       /*Youtube*/ null,
       /*Instagram*/ null,
-      /*Description*/ 'Description goes here for describing what or who this card is about.'
+      /*Description*/ 'OG GIGACHAD amongst men. Speedrunner, and great friend.'
     ),
     new Community(
       /*User*/ 'Toky',
@@ -70,10 +70,11 @@ export class OthersComponent implements OnInit {
       /*Twitter*/ 'ToKymonGrey',
       /*Youtube*/ null,
       /*Instagram*/ 'tokymongrey',
-      /*Description*/ 'Description goes here for describing what or who this card is about.'
+      /*Description*/ 'High energy, and welcoming presence, cozy streamer.'
     ),
   ];
 
+  //generate random colour
   ngOnInit(): void {
     const randomNum = '#' + (((1 << 24) * Math.random()) | 0).toString(16);
 

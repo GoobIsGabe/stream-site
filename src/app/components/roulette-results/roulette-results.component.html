@@ -1,29 +1,16 @@
-<p>roulette-results works!</p>
+  <h1>Roulette Result History</h1>
+  <p>Click on a header to sort!</p>
+  <div class="filtering">
 <input type="search" placeholder="Search by user" [(ngModel)]="user" (keyup)="searchResults()"  />
 <input type="search" placeholder="Search by item" [(ngModel)]="item" (keyup)="searchResults()"  />
-<!-- <h3>Roulette Results</h3>
-<ul>
-  <li
-    *ngFor="let roulette of rouletteResults; let i = index "
-    [class.active]="i == currentIndex"
-    (click)="setActiveRoulette(roulette, i)"
-  >
-    <div class="name list-item">{{ roulette.Username }} </div>
-    <div class="result list-item">{{ roulette.Result }}</div>
-    <div class="occurred list-item">{{ roulette.Occurred | date: "medium"}}</div>
-  </li>
-</ul>
- -->
-
-  <!--for demo wrap-->
-  <h1>Roulette Result History</h1>
+</div>
   <div class="tbl-header">
     <table cellpadding="0" cellspacing="0" border="0">
       <thead>
         <tr>
-          <th [appSort]="rouletteResults" data-order="desc" data-name="Username" scope="col">Name</th>
-          <th [appSort]="rouletteResults" data-order="desc" data-name="Result" scope="col">Result</th>
-          <th [appSort]="rouletteResults" data-order="desc" data-name="Occurred" scope="col">Occurred</th>
+          <th [appSort]="rouletteResults" data-order="desc" data-name="Username" scope="col"><a>Name</a></th>
+          <th [appSort]="rouletteResults" data-order="desc" data-name="Result" scope="col"><a>Result</a></th>
+          <th [appSort]="rouletteResults" data-order="desc" data-name="Occurred" scope="col"><a>Occurred</a></th>
         </tr>
       </thead>
     </table>
@@ -41,4 +28,7 @@
       </tbody>
     </table>
   </div>
+  <div class="records">
+  <a routerLink="/records" >Go back to records</a>
+</div>
 
