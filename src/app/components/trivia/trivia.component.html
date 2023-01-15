@@ -1,0 +1,35 @@
+<h1>Trivia Leaderboards</h1>
+<p>Click on a header to sort!<br>Correct answers are only from successfully completed trivias! Any trivia that was incomplete are not counted towards the tally</p>
+<div class="filtering">
+<input type="search" placeholder="Search by user" [(ngModel)]="user" (keyup)="searchResults()"  />
+</div>
+<div class="tbl-header">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <thead>
+      <tr>
+        <th [appSort]="triviaResults" data-order="desc" data-name="Username" scope="col"><a>Name</a></th>
+        <th [appSort]="triviaResults" data-order="desc" data-name="Result" scope="col"><a>Wins</a></th>
+        <th [appSort]="triviaResults" data-order="desc" data-name="Result" scope="col"><a>Correct Answers</a></th>
+        <th [appSort]="triviaResults" data-order="desc" data-name="Occurred" scope="col"><a>Last Played</a></th>
+      </tr>
+    </thead>
+  </table>
+</div>
+<div class="tbl-content">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tbody>
+      <tr *ngFor="let trivia of triviaResults; let i = index "
+      [class.active]="i == currentIndex"
+      (click)="setActiveTrivia(trivia, i)" >
+        <td>{{ trivia.Username }} </td>
+        <td>{{ trivia.Wins }}</td>
+        <td>{{ trivia.Correct }}</td>
+        <td>{{ trivia.Latest | date: "medium"}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="records">
+<a routerLink="/records" >Go back to records</a>
+</div>
+

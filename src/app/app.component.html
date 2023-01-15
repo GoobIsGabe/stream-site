@@ -1,5 +1,5 @@
 <!-- Hides if is on specific page -->
-<app-navbar *ngIf="router.url != '/socials'"></app-navbar>
+<app-navbar *ngIf="router.url !== '/landing' && router.url !== '/socials'"></app-navbar>
 <main >  
   <svg *ngIf="router.url != '/socials'"
   viewBox="0 0 200 200"

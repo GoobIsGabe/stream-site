@@ -13,6 +13,9 @@ import { WidgetsComponent } from './components/widgets/widgets.component';
 import { RouletteComponent } from './components/roulette/roulette.component';
 import { RouletteResultsComponent } from './components/roulette-results/roulette-results.component';
 import { RecordsComponent } from './components/records/records.component';
+import { TriviaComponent } from './components/trivia/trivia.component';
+import { LandingComponent } from './components/landing/landing.component';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
@@ -28,7 +31,8 @@ const routes: Routes = [
   { path: 'widgets/roulette', component: RouletteComponent },
   { path: 'roulette', component: RouletteResultsComponent },
   { path: 'records', component: RecordsComponent },
-
+  { path: 'trivia', component: TriviaComponent },
+  { path: 'landing', component: LandingComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -46,5 +50,7 @@ export const routingComponents = [
   StreamComponent,
   VodsComponent,
   RouletteResultsComponent,
-  RecordsComponent
+  RecordsComponent,
+  TriviaComponent,
+  LandingComponent
 ];

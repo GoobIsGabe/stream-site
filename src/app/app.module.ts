@@ -20,6 +20,8 @@ import { RouletteResultsComponent } from './components/roulette-results/roulette
 import { FormsModule } from '@angular/forms';
 import { SortDirective } from './directive/sort.directive';
 import { RecordsComponent } from './components/records/records.component';
+import { TriviaComponent } from './components/trivia/trivia.component';
+import { LandingComponent } from './components/landing/landing.component';
 
 
 @NgModule({
@@ -40,7 +42,9 @@ import { RecordsComponent } from './components/records/records.component';
     RouletteComponent,
     RouletteResultsComponent,
     SortDirective,
-    RecordsComponent,   
+    RecordsComponent,
+    TriviaComponent,
+    LandingComponent,   
   ],
   imports: [
     BrowserModule,

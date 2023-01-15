@@ -72,6 +72,15 @@ export class OthersComponent implements OnInit {
       /*Instagram*/ 'tokymongrey',
       /*Description*/ 'High energy, and welcoming presence, cozy streamer.'
     ),
+    new Community(
+      /*User*/ 'ZealotPara',
+      /*Image*/ 'https://static-cdn.jtvnw.net/jtv_user_pictures/03471c1e-2e3e-4778-9083-23c20c443f82-profile_image-300x300.png',
+      /*Twitch*/ 'zealotpara',
+      /*Twitter*/ 'zealotpara',
+      /*Youtube*/ null,
+      /*Instagram*/ null,
+      /*Description*/ 'Hardest reactor, hype legend and enjoyable creator.'
+    ),
   ];
 
   //generate random colour

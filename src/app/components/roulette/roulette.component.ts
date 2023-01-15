@@ -11,7 +11,7 @@ export class RouletteComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     //IMPORTANT VARIABLES
     //How many images do you have in the folder?
-    let num = 18;
+    let num = 21;
     //How many times do you want the cube to spin
     let maxspins = 9;
     //How fast do you want the cube to spin
