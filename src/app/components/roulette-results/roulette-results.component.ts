@@ -26,6 +26,7 @@ export class RouletteResultsComponent implements OnInit {
     .subscribe(
       data => {
         this.rouletteResults = data;
+        this.rouletteResults.sort((a, b) => new Date(b.Occurred).getTime() - new Date(a.Occurred).getTime());
         console.log(data);
       },
       error => {
