@@ -26,6 +26,14 @@ export class TriviaComponent implements OnInit {
     .subscribe(
       data => {
         this.triviaResults = data;
+        data.sort(function (a, b) {
+          if (b.Wins !== a.Wins) {
+              return b.Wins - a.Wins;
+          }
+          if (b.Correct !== a.Correct) {
+              return b.Correct - a.Correct;
+          }
+      });
         console.log(data);
       },
       error => {
@@ -55,4 +63,5 @@ export class TriviaComponent implements OnInit {
         console.log(error);
       });
   }
+
 }

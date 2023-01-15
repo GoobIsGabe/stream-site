@@ -8,10 +8,10 @@
     <thead>
       <tr>
         
-        <th [appSort]="triviaResults" data-order="desc" data-name="Username" scope="col"><a>Name</a></th>
+        <th [appSort]="triviaResults" data-name="Username" scope="col"><a>Name</a></th>
         <th [appSort]="triviaResults" data-order="desc" data-name="Wins" scope="col"><a>Wins</a></th>
-        <th [appSort]="triviaResults" data-order="desc" data-name="Correct" scope="col"><a>Correct Answers</a></th>
-        <th [appSort]="triviaResults" data-order="desc" data-name="Latest" scope="col"><a>Last Played</a></th>
+        <th [appSort]="triviaResults" data-name="Correct" scope="col"><a>Correct Answers</a></th>
+        <th [appSort]="triviaResults" data-name="Latest" scope="col"><a>Last Played</a></th>
       </tr>
     </thead>
   </table>
@@ -19,7 +19,7 @@
 <div class="tbl-content">
   <table cellpadding="0" cellspacing="0" border="0">
     <tbody>
-      <tr *ngFor="let trivia of triviaResults; let i = index "
+      <tr *ngFor="let trivia of triviaResults"
       [class.active]="i == currentIndex"
       (click)="setActiveTrivia(trivia, i)" >
         <td>{{ trivia.Username }} </td>
