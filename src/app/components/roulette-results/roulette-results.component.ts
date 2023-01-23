@@ -27,10 +27,10 @@ export class RouletteResultsComponent implements OnInit {
       data => {
         this.rouletteResults = data;
         this.rouletteResults.sort((a, b) => new Date(b.Occurred).getTime() - new Date(a.Occurred).getTime());
-        console.log(data);
+        // console.log(data);
       },
       error => {
-        console.log(error);
+        // console.log(error);
       });
   }
 
@@ -50,10 +50,10 @@ export class RouletteResultsComponent implements OnInit {
     .subscribe(
       data =>{
         this.rouletteResults = data;
-        console.log(data);
+        // console.log(data);
       },
       error =>{
-        console.log(error);
+        // console.log(error);
       });
   }
 

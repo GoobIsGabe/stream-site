@@ -34,10 +34,10 @@ export class TriviaComponent implements OnInit {
               return b.Correct - a.Correct;
           }
       });
-        console.log(data);
+        // console.log(data);
       },
       error => {
-        console.log(error);
+        // console.log(error);
       });
   }
 
@@ -57,10 +57,10 @@ export class TriviaComponent implements OnInit {
     .subscribe(
       data =>{
         this.triviaResults = data;
-        console.log(data);
+        // console.log(data);
       },
       error =>{
-        console.log(error);
+        // console.log(error);
       });
   }
 
