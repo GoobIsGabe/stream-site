@@ -1,0 +1,33 @@
+<h1>Coin Leaderboards</h1>
+<p>Click on a header to sort!</p>
+<div class="filtering">
+<input type="search" placeholder="Search by user" [(ngModel)]="user" (keyup)="searchResults()"  />
+</div>
+<div class="tbl-header">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <thead>
+      <tr>
+        <th [appSort]="coinNumber" data-order="desc" data-name="Username" scope="col"><a>Name</a></th>
+        <th [appSort]="coinNumber" data-order="desc" data-name="Coins" scope="col"><a>Coins</a></th>
+        <th [appSort]="coinNumber" data-order="desc" data-name="Latest" scope="col"><a>Latest</a></th>
+      </tr>
+    </thead>
+  </table>
+</div>
+<div class="tbl-content">
+  <table cellpadding="0" cellspacing="0" border="0">
+    <tbody>
+      <tr *ngFor="let coin of coinNumber; let i = index "
+      [class.active]="i == currentIndex"
+      (click)="setActiveCoin(coin, i)" >
+        <td>{{ coin.Username }} </td>
+        <td>{{ coin.Coins }}</td>
+        <td>{{ coin.Latest | date: "medium"}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<div class="records">
+<a routerLink="/records" >Go back to records</a>
+</div>
+

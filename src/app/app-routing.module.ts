@@ -15,6 +15,7 @@ import { RouletteResultsComponent } from './components/roulette-results/roulette
 import { RecordsComponent } from './components/records/records.component';
 import { TriviaComponent } from './components/trivia/trivia.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { CoinsComponent } from './components/coins/coins.component';
 
 
 const routes: Routes = [
@@ -33,6 +34,7 @@ const routes: Routes = [
   { path: 'records', component: RecordsComponent },
   { path: 'trivia', component: TriviaComponent },
   { path: 'landing', component: LandingComponent },
+  { path: 'coins', component: CoinsComponent },
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
@@ -52,5 +54,6 @@ export const routingComponents = [
   RouletteResultsComponent,
   RecordsComponent,
   TriviaComponent,
-  LandingComponent
+  LandingComponent,
+  CoinsComponent
 ];

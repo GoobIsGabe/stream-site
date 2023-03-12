@@ -22,6 +22,7 @@ import { SortDirective } from './directive/sort.directive';
 import { RecordsComponent } from './components/records/records.component';
 import { TriviaComponent } from './components/trivia/trivia.component';
 import { LandingComponent } from './components/landing/landing.component';
+import { CoinsComponent } from './components/coins/coins.component';
 
 
 @NgModule({
@@ -44,7 +45,8 @@ import { LandingComponent } from './components/landing/landing.component';
     SortDirective,
     RecordsComponent,
     TriviaComponent,
-    LandingComponent,   
+    LandingComponent,
+    CoinsComponent,   
   ],
   imports: [
     BrowserModule,
