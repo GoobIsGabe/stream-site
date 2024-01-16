@@ -41,6 +41,8 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+youtube.service.ts
+youtube.service.spec.ts
 
 # System Files
 .DS_Store

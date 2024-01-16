@@ -1,0 +1,53 @@
+.content {
+    margin: 0 20% 0 20%;
+    background-color: aqua;
+    text-align: center;
+}
+.content h1 {
+    padding-top: 2em;
+}
+
+.link-logo {
+    width: 35px;
+    fill: white;
+}
+
+.links-list a {
+    margin: 10px 20% 10px 20%;
+    max-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+
+.twitch {
+    background-color: #9146FF;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.youtube {
+    background-color: #FF0000;
+}
+
+.site{
+    background-color: #00c2bf;
+}
+.links-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-item {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.link-logo {
+    margin-top: 5px;
+    margin-right: 10px;
+}
